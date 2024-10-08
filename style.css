@@ -1,0 +1,125 @@
+/* General Body Styling */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #f8f9fa;
+    color: #202122;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #3366cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #2a4b8d;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Table of Contents (TOC) */
+#toc {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #c8ccd1;
+    width: 250px;
+    float: right;
+}
+
+#toc h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #c8ccd1;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#toc ul li {
+    margin-bottom: 5px;
+}
+
+#toc ul li a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+#toc ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    margin: 0 20px;
+    padding-bottom: 40px;
+}
+
+main h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #3366cc;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #c8ccd1;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Links Styling */
+a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Clear the float for the TOC so content doesn't overlap */
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    #toc {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
